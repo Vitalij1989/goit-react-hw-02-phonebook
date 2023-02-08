@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
 import {
-  ListIcon,
   ListBtn,
   ContactsTable,
   ContactsTableHead,
@@ -26,10 +25,7 @@ export const ContactList = ({ contacts, onRemove }) => {
           {contacts.map(({ id, name, number }) => {
             return (
               <ContactsTableRow key={id}>
-                <ContactsFlexCeil>
-                  <ListIcon></ListIcon>
-                  {name}
-                </ContactsFlexCeil>
+                <ContactsFlexCeil>{name}</ContactsFlexCeil>
                 <ContactsTableCeil>{number}</ContactsTableCeil>
                 <ContactsTableCeil>
                   <ListBtn
@@ -37,7 +33,9 @@ export const ContactList = ({ contacts, onRemove }) => {
                     onClick={() => {
                       onRemove(id);
                     }}
-                  ></ListBtn>
+                  >
+                    delete
+                  </ListBtn>
                 </ContactsTableCeil>
               </ContactsTableRow>
             );

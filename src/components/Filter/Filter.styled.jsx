@@ -17,10 +17,10 @@ export const FilterLabel = styled.label`
 export const FilterInput = styled.input`
   padding: 8px;
   background: transparent;
-  border: 2px solid #e5e0ff;
+  border: 2px solid #rgb(48, 39, 39);
   border-radius: 5px;
   :focus {
-    outline: 1px solid #8ea7e9;
+    outline: 1px solid #rgb(48, 39, 39);
   }
   :focus ~ label,
   :not(:placeholder-shown) ~ label {

@@ -1,17 +1,5 @@
 import styled from 'styled-components';
 
-import getRandomHexColor from 'utils/getRandomHexColor';
-
-export const ListIcon = styled.span`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: ${getRandomHexColor};
-`;
-
 export const ListBtn = styled.button`
   border: none;
   background-color: transparent;
@@ -33,7 +21,7 @@ export const ContactsTableHead = styled.th`
   font-weight: 500;
   font-size: 16px;
   color: #ffffff;
-  background-color: #8ea7e9;
+  background-color: #18161694;
   :not(:last-child) {
     border-right: 1px solid #fff;
   }
@@ -50,6 +38,7 @@ export const ContactsTableRow = styled.tr`
 export const ContactsTableCeil = styled.td`
   padding: 10px;
   text-align: center;
+
   :not(:last-child) {
     border-right: 1px solid darkgrey;
   }
@@ -60,6 +49,7 @@ export const ContactsFlexCeil = styled.td`
   align-items: center;
   gap: 15px;
   padding: 10px;
+
   :not(:last-child) {
     border-right: 1px solid darkgrey;
   }

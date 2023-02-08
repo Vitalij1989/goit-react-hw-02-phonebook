@@ -31,10 +31,10 @@ export const InputContainer = styled.div`
 export const Input = styled.input`
   padding: 8px;
   background: transparent;
-  border: 2px solid #00000;
+  border: 2px solid #rgb(48, 39, 39);
   border-radius: 5px;
   :focus {
-    outline: 1px solid #f90707;
+    outline: 1px solid #rgb(48, 39, 39);
   }
   :focus ~ label,
   :not(:placeholder-shown) ~ label {
@@ -59,6 +59,6 @@ export const Button = styled.button.attrs({ type: 'submit' })`
   transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   :hover,
   :focus {
-    background-color: #7286d3;
+    background-color: #97d372;
   }
 `;
