@@ -7,13 +7,12 @@ import {
   Title,
 } from './Section.styled';
 
-export const Section = ({ title, children, headerContent }) => {
+export const Section = ({ title, children }) => {
   return (
     <PhonebookSection>
       <PhonebookContainer>
         <TitleContainer>
           <Title>{title}</Title>
-          {headerContent}
         </TitleContainer>
         {children}
       </PhonebookContainer>
@@ -24,5 +23,4 @@ export const Section = ({ title, children, headerContent }) => {
 Section.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
-  headerContent: PropTypes.node.isRequired,
 };
